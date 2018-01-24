@@ -1,0 +1,8 @@
+_cache
+_site
+.idea/
+.vscode/
+vendor/bundle/
+.bundle/
+_site/
+_plugins/

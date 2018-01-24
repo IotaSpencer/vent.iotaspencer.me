@@ -1,0 +1,71 @@
+# Jekyll configuration
+
+name: Iota
+author: Ken Spencer
+year: 2018
+description: The ramblings of an atheist madman in a mad world
+my_age: 26
+# Url is currently only used only for the RSS feed in feed.xml
+url: https://vent.iotaspencer.me
+
+# host for serving locally and viewing with my phone
+host: 0.0.0.0
+# For a project page here should be a project name. Otherwise (for user's/organization's page leave it empty)
+baseurl: '/'
+
+share:
+  facebook: true
+  twitter: true
+  gplus: false
+  linkedin: false
+  pinterest: false
+  email: true
+
+social:
+  github: IotaSpencer
+  gitlab: IotaSpencer
+  twitter: IotaEcode
+
+  rss: feed.xml
+  tel: '1-802-222-0843'
+  discord: "Iota#1651"
+
+# Google Analytics key, leave blank to ignore
+google_analytics_key: UA-46280703-6
+# Yandex metrica (https://metrica.yandex.com/) leave blank to ignore or put true to use
+yandex_metrica:
+
+
+# Set this to your disqus shortname to enable comments. Note that the 'comments'
+# setting below must also be true. Individual posts can override 'comments' to
+# disable on a post-by-post basis
+disqus: vent-iotaspencer
+comments: true
+
+permalink: pretty
+
+# Enable for using pages, more details are here: http://jekyllrb.com/docs/pagination/
+#paginate: 3
+
+#highlighter: rouge
+
+markdown: kramdown
+kramdown:
+  auto_ids: true
+  input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
+  hard_wrap: true
+timezone: America/New_York
+exclude: ['README.md', 'LICENSE', 'vendor/']
+plugins:
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-avatar
+  - jemoji
+  - jekyll-mentions
+  - jekyll-include-cache
+collections_dir: my_collections
+collections:
+  - projects
+  
