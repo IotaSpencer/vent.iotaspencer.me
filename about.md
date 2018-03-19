@@ -16,4 +16,5 @@ Unless I'm deeply down, programming is my goto for winding down after a hard day
 ## Links
 
 * [ElectroCode](https://electrocode.net) <span class="badge badge-pill badge-dark">My IRC Network and other IRC related projects site</span>
-<!--* [My Resume/CV](/resume) <span class="badge badge-pill badge-dark">Looking to Hire? Here's my Skills and such.</span>-->
+* [IotaSpencer.me](https://iotaspencer.me) <span class="badge badge-pill badge-dark">The non-controversial version of this website</span>
+* * [Projects](https://iotaspencer.me) <span class="badge badge-pill badge-dark">My Projects</span>
