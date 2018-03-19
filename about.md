@@ -18,4 +18,4 @@ I'm also an atheist, so theres that too.
 
 * [ElectroCode](https://electrocode.net) <span class="badge badge-pill badge-dark">My IRC Network and other IRC related projects site</span>
 * [IotaSpencer.me](https://iotaspencer.me) <span class="badge badge-pill badge-dark">The non-controversial version of this website</span>
-* * [Projects](https://iotaspencer.me) <span class="badge badge-pill badge-dark">My Projects</span>
+  * [Projects](https://iotaspencer.me) <span class="badge badge-pill badge-dark">My Projects</span>
