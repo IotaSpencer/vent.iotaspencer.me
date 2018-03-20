@@ -18,4 +18,8 @@ I'm also an atheist, so theres that too.
 
 * [ElectroCode](https://electrocode.net) <span class="badge badge-pill badge-dark">My IRC Network and other IRC related projects site</span>
 * [IotaSpencer.me](https://iotaspencer.me) <span class="badge badge-pill badge-dark">The non-controversial version of this website</span>
-  * [Projects](https://iotaspencer.me) <span class="badge badge-pill badge-dark">My Projects</span>
+  * [Projects](https://iotaspencer.me/projects) <span class="badge badge-pill badge-dark">My Projects</span>
+    * [mkmatter](https://iotaspencer.me/projects/mkmatter) <span class="badge badge-pill badge-dark">A command line tool to create and maintain content on a jekyll site.</span>
+    * [site_hook](https://iotaspencer.me/projects/site_hook) <span class="badge badge-pill badge-dark">A webhook receiver capable of receiving POST requests from git hosting services. GitLab & GitHub etc.</span>
+    * [micro-install](https://iotaspencer.me/projects/micro-install) <span class="badge badge-pill badge-dark">An Install script for 'micro' a terminal text-editor, packaged as a gem.</span>
+    * [bot-template](https://iotaspencer.me/projects/bot-template) <span class="badge badge-pill badge-dark">A cinch bot template.</span>
