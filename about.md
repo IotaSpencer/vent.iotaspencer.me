@@ -5,7 +5,7 @@ title: About
 ---
 # Me Stuff
 
-## So um..
+## So um
 
 Hi, my name is Ken Spencer, if you didn't already figure that out.. I'm 26 years old and live in New York State.
 
