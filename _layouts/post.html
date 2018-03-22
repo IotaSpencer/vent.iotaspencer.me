@@ -1,53 +1,74 @@
 {% include header.html %}
-    <div class="wrapper">
-      <div class="content">
-        <div class="container container-center">
-          <div class="row">
-            <div class="col-md-8">
-              <div class="article">
-                <div class="well p-2 p-sm-2">
-                  <h1><a href="{{ page.url | relative_url }}">{{ page.title }}</a></h1>
-                  <div class="post-meta">
-                    <div class="post-time">
-                      <i class="fa fa-calendar"></i>
-                      <time>{{ page.date | date_to_string }}</time>
-                    </div>
-                    <ul>
-                      {% for tag in page.tags %}
-                        <li><a href="{{ '/tag/' | append: tag | relative_url }}">{{ tag }}</a></li>
-                      {% endfor %}
-                    </ul>
-                  </div>
-                  <div class="post-content">
-                    <div id="toc" class="toc"></div>
-                    {{ content }}
-                    {% include share.html %}
-                  </div>
+<div class="wrapper">
+    <div class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="article">
+                        <div class="well px-3 py-3">
+                            <h1 class="post-title page-header pl-4 pt-4 display-5">
+                                <a href="{{ page.url | relative_url }}">{{ page.title }}</a>
+                            </h1>
+                            <div class="post-meta container">
+                                <div class="post-time">
+                                    <i class="fas fa-calendar"></i>
+                                    <time>{{ page.date | date_to_string }}</time>
+                                </div>
+                                <i class="fas fa-times fa-spin"></i>
+                                <ul>
+                                    {% for tag in page.tags %} {% if page.tags.first != tag %}
+                                    <i class="fab fa-linux"></i>
+                                    {% endif %}
+                                    <li>
+                                        <a href="{{ '/tag/' | append: tag | relative_url }}">{{ tag }}</a>
+                                    </li>
 
-                  {% if page.comments %}
-                  <div id="disqus_thread">
-                    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-                  </div>
-                  {% endif %}
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                            <div class="post-content">
+                                <div class="well toc-well float-right mx-3 px-3 pt-2 bg-dark">
+                                    {% include toc.html html=content h_min=2 ordered=true id="post_toc" %}
+                                </div>
+                                <div>
+                                    {{ content }}
+                                </div>
+                                {% include share.html %}
+                            </div>
+                            {% if page.comments %}
+                            <div id="disqus_thread">
+                                <noscript>Please enable JavaScript to view the
+                                    <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+                                </noscript>
+                                <a href="http://disqus.com" class="dsq-brlink">comments powered by
+                                    <span class="logo-disqus">Disqus</span>
+                                </a>
+                            </div>
+                            {% endif %}
+                        </div>
+                        <div class="my-3 alert bg-dark text-center">
+                            <span>
+                                If theres something you want me to post about. Contact me! See
+                                <a href="https://iotaspencer.me/about">here</a>
+                            </span>
+                            <blockquote class="mx-auto">
+                              <p>“It's now very common to hear people say, 'I'm rather offended by that.' As if that gives them certain rights. It's actually nothing more... than a whine. 'I find that offensive.' It has no meaning; it has no purpose; it has no reason to be respected as a phrase. 'I am offended by that.' Well, so fucking what."</p>
+                              <footer class="blockquote-footer"><cite title="Source Title">Stephen Fry</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
                 </div>
-                <div class="my-3 bg-dark p-3">
-                  <p class="mx-auto">If you want me to make a post about something let me know!</p>
-                  <blockquote class="mx-auto">
-                    <p>“It's now very common to hear people say, 'I'm rather offended by that.' As if that gives them certain rights. It's actually nothing more... than a whine. 'I find that offensive.' It has no meaning; it has no purpose; it has no reason to be respected as a phrase. 'I am offended by that.' Well, so fucking what."</p>
-                    <footer class="blockquote-footer"><cite title="Source Title">Stephen Fry</cite></footer>
-                  </blockquote>
+                <div class="col-md-4 d-none d-md-block">
+                    {% include sidebar.html %}
                 </div>
-              </div>
             </div>
-            <div class="col-md-4 hidden-xs">
-              {% include sidebar.html %}
-            </div>
-          </div>
         </div>
         {% include disqus-comments.html %}
-      </div>
-      {% include footer.html %}
     </div>
-  </body>
+    {% include footer.html %}
+</div>
+</div>
+
+</body>
+
 </html>
