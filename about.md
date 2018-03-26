@@ -18,7 +18,9 @@ I'm also an atheist, so theres that too.
 
 ### Affiliate Sites
 * [ElectroCode](https://electrocode.net) <span class="badge badge-pill badge-dark">My IRC Network and other IRC related projects site</span>
+
 ### The non-controversial version
+
 * [IotaSpencer.me](https://iotaspencer.me) <span class="badge badge-pill badge-dark">The non-controversial version of this website</span>
   * [Projects](https://iotaspencer.me/projects) <span class="badge badge-pill badge-dark">My Projects</span>
     * [mkmatter](https://iotaspencer.me/projects/mkmatter) <span class="badge badge-pill badge-dark">A command line tool to create and maintain content on a jekyll site.</span>
