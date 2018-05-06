@@ -5,7 +5,7 @@ date: "2018-04-30 18:42:54 -0400"
 tags:
 - retail-woes
 categories:
-- Retail Woes
+- Retail-Woes
 
 ---
 # Retail Woes 1
