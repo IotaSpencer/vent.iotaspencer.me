@@ -1,5 +1,6 @@
 ---
-layout: post title: "Renewed Intrest in Ranting"
+layout: post
+title: "Renewed Intrest in Ranting"
 date: "2021-08-15 00:00:00 -0400"
 tags:
     - updates
