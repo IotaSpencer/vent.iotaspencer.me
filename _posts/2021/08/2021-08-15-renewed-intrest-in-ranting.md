@@ -6,6 +6,7 @@ tags:
     - updates
 categories:
     - updates
+    - uncategorized
 
 ---
 
