@@ -76,34 +76,34 @@
   {% if site.social.twitter %}
   <li>
     <a title="@{{ site.social.twitter}} on Twitter" href="https://twitter.com/{{site.social.twitter}}" target="_blank">
-      <i class="fab fa-twitter fa-2x" style="color:#1da1f2;"></i>
+      <i class="fab fa-twitter fa-2x" aria-hidden="true" style="color:#1da1f2;"></i>
     </a>
   </li>
   {% endif %}
   {% if site.social.github %}
   <li>
     <a title="{{ site.social.github }} on Github" href="https://github.com/{{ site.social.github }}" target="_blank">
-      <i class="fab fa-github fa-2x" style="color:333;"></i>
+      <i class="fab fa-github fa-2x" aria-hidden="true" style="color:333;"></i>
     </a>
   </li>
   {% endif %}
   {% if site.social.gitlab %}
   <li>
     <a title="{{ site.social.gitlab }} on GitLab" href="https://gitlab.com/{{ site.social.gitlab }}" target="_blank">
-      <i class="fab fa-gitlab fa-2x" style="color: e24329;"></i>
+      <i class="fab fa-gitlab fa-2x" aria-hidden="true" style="color: e24329;"></i>
     </a>
   </li>
   {% endif %}
   {% if site.social.tel %}
   <li>
     <a title="Call {{site.name}} via Telephone" href="tel:{{ site.social.tel }}" target="_blank">
-      <i class="fas fa-phone-square fa-2x" style="color:black;"></i>
+      <i class="fas fa-phone-square fa-2x" style="color:black;" aria-hidden="true"></i>
     </a>
   </li>
   {% endif %} {% if site.social.discord %}
   <li>
     <a title="Talk to {{site.name}} on Discord" onclick="discord();">
-      <i class="fab fa-discord fa-2x" style="color:#7289da;"></i>
+      <i class="fab fa-discord fa-2x" style="color:#7289da;" aria-hidden="true"></i>
     </a>
   </li>
   <div class="modal fade" id="discord" hidden>
@@ -144,7 +144,8 @@
   {% endif %}
   {% if site.social.stackoverflow %}
     <li>
-      <a title="{{ site.social.stackoverflow }} on StackOverflow" href="https://stackoverflow.com/users/{{ site.social.stackoverflow }}" target="_blank"><i class="fab fa-stack-overflow fa-2x"></i></a>
+      <a title="{{ site.social.stackoverflow }} on StackOverflow" href="https://stackoverflow.com/users/{{ site.social.stackoverflow }}" target="_blank"><i class="fab fa-stack-overflow fa-2x"
+                                                                                                                                                            aria-hidden="true"></i></a>
     </li>
   {% endif %}
   {% if site.social.linkedin %}
@@ -153,32 +154,33 @@
       {% capture titlecase %}{% for word in linkedin %}{{ word | capitalize }} {% endfor %}{% endcapture %}
 
       <a title="{{ titlecase }} on LinkedIn" href="https://www.linkedin.com/in/{{ site.social.linkedin }}" target="_blank">
-        <i class="fab fa-linkedin fa-2x"></i>
+        <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
       </a>
     </li>
   {% endif %}
-  <!--
   {% if site.social.instagram %}
     <li>
-      <a title="{{ site.social.instagram }} on Instagram" href="https://instagram.com/{{ site.social.instagram }}" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+      <a title="{{ site.social.instagram }} on Instagram" href="https://instagram.com/{{ site.social.instagram }}" target="_blank"><i class="fa fa-instagram fa-2x"
+                                                                                                                                      aria-hidden="true"></i></a>
     </li>
   {% endif %}
 
   {% if site.social.lastfm %}
     <li>
-      <a title="{{ site.social.lastfm }} on Last.fm" href="https://www.lastfm.com/user/{{ site.social.lastfm }}" target="_blank"><i class="fa fa-lastfm fa-2x"></i></a>
+      <a title="{{ site.social.lastfm }} on Last.fm" href="https://www.lastfm.com/user/{{ site.social.lastfm }}" target="_blank"><i class="fa fa-lastfm fa-2x"
+                                                                                                                                    aria-hidden="true"></i></a>
     </li>
-  {% endif %} -->
+  {% endif %}
   {% if site.social.rss %}
   <li>
     <a title="{{ site.social.rss }} RSS" href="{{ site.social.rss | relative_url }}" target="_blank">
-      <i class="fas fa-rss fa-2x" style="color:#FF6600;"></i>
+      <i class="fas fa-rss fa-2x" style="color:#FF6600;" aria-hidden="true"></i>
     </a>
   </li>
   {% endif %}
   <li>
     <a title="My GNUPG Key" href="https://iotaspencer.me/gnupg" target="_blank">
-      <i class="fas fa-key fa-2x" style="color:yellow;"></i>
+      <i class="fas fa-key fa-2x" style="color:yellow;" aria-hidden="true"></i>
     </a>
   </li>
 
